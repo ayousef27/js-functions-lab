@@ -52,4 +52,12 @@ const calculateTip = (ba, tp) => {
 }
 console.log('Exercise 7 Result:', calculateTip(50, 20))
 
-const convertTemperature = () => {}
+const convertTemperature = (temp, scale) => {
+  if (scale === 'f') {
+    return ((temp - 32) * 5) / 9
+  } else {
+    return (temp * 9) / 5 + 32
+  }
+}
+
+console.log('Exercise 8 Result:', convertTemperature(32, 'f'))
