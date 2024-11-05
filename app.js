@@ -80,3 +80,18 @@ const basicCalculator = (num1, num2, operation) => {
   }
 }
 console.log('Exercise 9 Result:', basicCalculator(10, 5, 'subtract'))
+
+const calculateGrade = (grade) => {
+  if (grade >= 90) {
+    return 'A'
+  } else if (grade >= 80) {
+    return 'B'
+  } else if (grade >= 70) {
+    return 'C'
+  } else if (grade >= 60) {
+    return 'D'
+  } else if (grade < 60) {
+    return 'F'
+  }
+}
+console.log('Exercise 10 Result:', calculateGrade(100))
